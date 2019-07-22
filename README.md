@@ -12,6 +12,7 @@ Table of Contents
 5.	Test Client
 6.	Actuator
 7.	Log File
+
 1. What we i’ve built and start application
 I have built  RESTFul APIs for a Simple account opening service using Spring Boot 2 JPA and H2 embeded database. 
 I have also used Spring Actuator module and write junit unit test.
@@ -34,7 +35,9 @@ Swagger
 •	JDK - 1.8 or later
 •	JPA - Hibernate
 •	IDE - Eclipse or Spring Tool Suite (STS)
+
 . 3.Database
+
 I have used H2 embeded database. While application is starting, scheme.sql and data.sql executes automatically.Those files locates in resorces folder in Project.
 Scheme.sql creates tables,keys,and sequences
 Data.sql insert new records
@@ -75,6 +78,8 @@ INSERT INTO t_account (id,name,balance,user_id) VALUES (1, 'Family', 0.00, 1);
 INSERT INTO t_account (id,name,balance,user_id) VALUES (2, 'Retired', 178.34, 3);
 INSERT INTO t_account (id,name,balance,user_id) VALUES (3, 'MyAccount', 12300.65, 5);
 INSERT INTO t_account (id,name,balance,user_id) VALUES (4, 'Other', 0.00, 7);
+
+
  4. Testing REST APIs via Postman Client
 Get All Accounts
 HTTP Method: GET 
@@ -130,6 +135,8 @@ http://localhost:5050/finance/actuator
 You can see application logs at finance.log file.
 Log level may changed from application.properties file which locates in Project=>Resources.
 
+
+You can see the readMe.docx for getting images.
  
 
 
